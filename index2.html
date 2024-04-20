@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Scheduling</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1 class="title">Irrigation Time</h1>
+            <div class="input-box">
+                <label for="areaInput" class="input-label">Area (in acres):</label>
+                <input type="number" id="areaInput" class="input-field">
+                
+                <label for="pressureInput" class="input-label">Pressure (in bar):</label>
+                <input type="number" id="pressureInput" class="input-field">
+                
+                <label for="cropInput" class="input-label">Crop:</label>
+                <select id="cropInput" class="input-field">
+                    <option value="wheat">Wheat</option>
+                    <option value="rice">Rice</option>
+                    <option value="cotton">Cotton</option>
+                </select>
+                
+                <label for="depthInput" class="input-label">Depth (in inches):</label>
+                <input type="number" id="depthInput" class="input-field">
+
+                <button id="calculateBtn" class="calculate-btn">Calculate</button>
+            </div>
+            <div id="result" class="hidden">
+                <h2 class="subtitle">Estimated Time:</h2>
+                <p id="estimatedTime"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

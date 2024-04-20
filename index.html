@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irrigation Scheduling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Irrigation Scheduling</h1>
+        <div class="crop-selection">
+            <label for="cropSelect" class="label-text"></label>
+            <select id="cropSelect" class="select-box">
+                <option value="">Select a crop</option>
+                <!-- Add more crop options here -->
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="cotton">Cotton</option>
+            </select>
+            <div class="dropdown-arrow shimmer"></div>
+        </div>
+        <div id="irrigationSchedule" class="hidden">
+            <h2 class="subtitle">Irrigation Schedule</h2>
+            <ul id="scheduleList" class="schedule-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
